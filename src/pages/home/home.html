@@ -1,14 +1,20 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Lector de barras
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding >
+  <ion-label text-center>  Este es un ejemplo de un lector de barras en Ionic 3 </ion-label>
+ 
+
+  <ion-item text-center>
+    <button ion-button (click)="scanNow()" center>Escanear</button>
+  </ion-item>
+
+  <h4>El resultado es: </h4>
+  <p> {{result}} </p>
+
 </ion-content>
